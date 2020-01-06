@@ -3,8 +3,8 @@ os: linux
 
 hooks:
   BeforeInstall:
-    location: .scripts/stop.sh
+    - location: .scripts/stop.sh
   AfterInstall:
-    location: .scripts/create.sh
+    - location: .scripts/create.sh
   ApplicationStart:
-    location: .scripts/start.sh
+    - location: .scripts/start.sh
